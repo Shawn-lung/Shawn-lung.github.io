@@ -23,5 +23,5 @@ document.getElementById('wealthAccumulation').addEventListener('click', function
 });
 
 function navigateToQuestionPage(contextId) {
-    window.location.href = `question.html?contextId=${contextId}`;
+    window.location.href = `https://shawn-lung.github.io/question.html?contextId=${contextId}`;
 }
