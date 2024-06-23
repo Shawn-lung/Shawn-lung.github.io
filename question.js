@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function fetchQuestions(contextId) {
-    fetch(`http://172.226.160.2:3000/questions?contextId=${contextId}`)
+    fetch(`https://125.228.8.172:3000/questions?contextId=${contextId}`)
         .then(response => response.json())
         .then(data => {
             questions = data;
@@ -39,7 +39,7 @@ function submitAnswer(option) {
     const question = questions[currentQuestionIndex];
     const score = getScore(option);
     totalScore += score;
-    fetch('http://localhost:3000/submitAnswer', {
+    fetch('https://125.228.8.172/submitAnswer', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

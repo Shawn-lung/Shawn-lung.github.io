@@ -7,7 +7,7 @@ document.getElementById('generate').addEventListener('click', async () => {
     console.log("Celebrity Type:", celebType);
 
     try {
-        const response = await fetch('http://172.226.160.2:3000/generateInvestmentCombo', {
+        const response = await fetch('https://125.228.8.172:3000/generateInvestmentCombo', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
