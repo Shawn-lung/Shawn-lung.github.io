@@ -39,7 +39,7 @@ function submitAnswer(option) {
     const question = questions[currentQuestionIndex];
     const score = getScore(option);
     totalScore += score;
-    fetch('https://125.228.8.172/submitAnswer', {
+    fetch('https://125.228.8.172:3000/submitAnswer', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
